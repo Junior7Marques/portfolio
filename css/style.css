@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@300&display=swap');
 
 .logo{
-    width:500px;
+    width:450px;
     height: 250px;
 }
 
@@ -63,6 +63,7 @@ header{
     grid-template-rows: 300px 25px 25px;
     padding: 5px;
     place-items: center;
+    margin: auto;
 }
 
 main{
@@ -71,6 +72,7 @@ main{
     place-items: center;
     margin-top: 5px;
     padding: 30px;
+    margin:auto;
 }
 
 h1{
