@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@300&display=swap');
+
+.logo{
+    width:500px;
+    height: 250px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: -45px;
+    font-family: 'Poppins', 'Helvetica' sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.redes-sociais{
+    display:flex;
+    justify-content: center;
+    width: 400px;
+    gap:10px;
+    padding: 5px;
+}
+
+.redes-sociais img:hover{
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.5s ease;
+    
+}
+
+.redes-sociais img{
+    width: 22px;
+    height: 22px;
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 25px 25px;
+    padding: 5px;
+    place-items: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.face-foto{
+    width: 330px;
+    height: 325px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.contato img{
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+}
+
+.texto{
+    font-family: 'Inter', 'Verdana', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.contato a{
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+    font-family: 'Inter', 'Verdana', sans-serif;
+}
+
+.contato img:hover{
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 50%;
+    transition: 0.5s ease;
+    padding: 3px;
+}
+
+
+@media (max-width: 900px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center;
+        gap:3px;
+    }
+
+    .face-foto{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+
+    h1{
+        font-size: 25px;
+    }
+    .foto{
+        grid-row: 1/1;
+    }
+
+    .texto{
+        grid-row: 2/2;
+        font-size: small;
+        text-align: center;
+    }
+
+    .contato{
+        margin-top: -140px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 200px;
+    }
+}
