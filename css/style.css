@@ -101,6 +101,11 @@ h1{
     letter-spacing: 2px;
 }
 
+#button{
+    width:500px;
+    color:white;
+}
+
 .contato a{
     text-decoration: none;
     color: gray;
